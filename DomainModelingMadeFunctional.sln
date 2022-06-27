@@ -4,11 +4,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "global", "global", "{A44630
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		README.md = README.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{75A502B2-DF3B-48DC-B00E-C3025744ADA8}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OrderTaking", "src\OrderTaking\OrderTaking.fsproj", "{5701F2B6-23E3-40F3-97F4-E716FF932719}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5701F2B6-23E3-40F3-97F4-E716FF932719} = {75A502B2-DF3B-48DC-B00E-C3025744ADA8}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5701F2B6-23E3-40F3-97F4-E716FF932719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5701F2B6-23E3-40F3-97F4-E716FF932719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5701F2B6-23E3-40F3-97F4-E716FF932719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5701F2B6-23E3-40F3-97F4-E716FF932719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
