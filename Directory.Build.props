@@ -3,7 +3,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
   </PropertyGroup>
-  
+
   <PropertyGroup Label="Prefer RAM disk as output path if available" Condition="Exists('R:\dotnet-build')">
     <SolutionBuildDir>R:\dotnet-build\$(SolutionName)\</SolutionBuildDir>
     <ProjectBuildDir>$(SolutionBuildDir)$(MSBuildProjectName)\</ProjectBuildDir>

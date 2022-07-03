@@ -1,0 +1,44 @@
+# http://editorconfig.org
+root = true
+
+# All Files
+[*]
+indent_style = space
+indent_size = 4
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Visual Studio XML Project Files
+[*.{fsproj,csproj}]
+indent_size = 2
+ij_xml_space_inside_empty_tag = true
+
+# Various XML Configuration Files
+[*.{xml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
+indent_size = 2
+ij_xml_space_inside_empty_tag = true
+
+# Use 4 spaces for the Python files
+[*.py]
+max_line_length = 80
+
+# The JSON files contain newlines inconsistently
+[*.json]
+insert_final_newline = unset
+
+# Minified JavaScript files shouldn't be changed
+[**.min.js]
+indent_style = unset
+insert_final_newline = unset
+
+# Makefiles always use tabs for indentation
+[Makefile]
+indent_style = tab
+
+# Batch files use tabs for indentation
+[*.bat]
+indent_style = tab
+
+[*.md]
+trim_trailing_whitespace = false
